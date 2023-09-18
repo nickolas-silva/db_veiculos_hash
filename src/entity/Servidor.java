@@ -1,11 +1,14 @@
 package entity;
 
-import hash_table.No;
-import hash_table.Tabela;
+import hash_encadeada.No_enc;
+import hash_encadeada.Tabela_encadeada;
+import hash_enderecamento.No;
+import hash_enderecamento.Tabela;
 
 public class Servidor {
   
-  public Tabela dadosT = new Tabela(100);
+  //public Tabela dadosT = new Tabela(100);
+  public Tabela_encadeada dadosT = new Tabela_encadeada(100);
   
   public Servidor(){
     System.out.println("Servidor Inicializado!");
@@ -36,11 +39,11 @@ public class Servidor {
   }
 
   public int contarVeiculos(){
-    
+    //return 0;
     return dadosT.contVeiculos();
   }
 
-  public No buscarVeiculo(Integer renavam){
+  public No_enc buscarVeiculo(Integer renavam){
     return dadosT.buscar(renavam);
   }
 }

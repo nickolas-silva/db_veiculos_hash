@@ -1,4 +1,4 @@
-package hash_table;
+package hash_enderecamento;
 
 import entity.Veiculo;
 
@@ -69,6 +69,7 @@ public class Tabela {
 
 		if(tabela[h].valor != null){
 			tabela[h] = null;
+			System.out.println("EXCLUIDO COM SUCESSO");
 		}
 		else{
 			System.out.println("Nao tem nada para excluir");
@@ -93,5 +94,7 @@ public class Tabela {
 		}
 		return qnt;
 	}
+
+	
 
 }
