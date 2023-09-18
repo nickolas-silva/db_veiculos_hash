@@ -39,8 +39,8 @@ public class Servidor {
   }
 
   public int contarVeiculos(){
-    //return 0;
     return dadosT.contVeiculos();
+    
   }
 
   public No_enc buscarVeiculo(Integer renavam){

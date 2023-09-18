@@ -95,6 +95,11 @@ public class Tabela_encadeada {
   public void remover(int k) {
     int h = this.hash(k);
 
+		if(tabela[h] == null){
+			System.out.println("Veiculo nao encontrado!");
+			return;
+		}
+
     while(tabela[h] != null){
       if(tabela[h].valor.renavam == k){
         if(tabela[h].prox == null){
@@ -119,7 +124,7 @@ public class Tabela_encadeada {
       }
 
     }
-    
+    System.out.println("Veiculo removido!");
   }
 
 

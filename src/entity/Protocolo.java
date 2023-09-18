@@ -69,11 +69,13 @@ s.addVeiculo(new Veiculo("OPQ-1234", "F-150", 2022, "34567890123", "Pedro Olivei
   public void deletarVeiculo(Integer k){
     System.out.println("Excluindo Veículo...");
     s.removerVeiculo(k);
+    //System.out.println("VEICULO EXCLUIDO");
   }
 
   public void editarVeiculo(Integer k, Veiculo v){
     System.out.println("Editando Veículo...");
     System.out.println(s.editar(k, v));
+    System.out.println("VEICULO EDITADO");
     
   }
 
